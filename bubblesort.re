@@ -1,4 +1,4 @@
-let rec bubble_sort = arr => {
+let rec bubblesort = arr => {
   let swaps = ref(0);
   let len = Array.length(arr);
   for (n in 0 to len - 1) {
@@ -16,6 +16,6 @@ let rec bubble_sort = arr => {
   };
   switch swaps^ {
   | 0 => arr;
-  | _ => bubble_sort(arr);
+  | _ => bubblesort(arr);
   };
 };
